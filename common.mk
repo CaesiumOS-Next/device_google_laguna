@@ -390,9 +390,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.carrierlock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.carrierlock.xml
 
-# Touch
-include hardware/google/pixel/touch/device.mk
-
 # VINTF
 DEVICE_MANIFEST_FILE += \
     device/google/laguna/vintf/manifest.xml
