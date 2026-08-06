@@ -316,13 +316,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.location.gps.prebuilt.xml
 
-# Lineage Health
-include hardware/google/pixel/lineage_health/device.mk
-
-$(call soong_config_set_bool,lineage_health,charging_control_supports_deadline,true)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_limit,true)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_toggle,false)
-
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     device/google/laguna/linker.config.json
@@ -373,8 +366,6 @@ PRODUCT_PACKAGES += \
     TerminalOverlay
 
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayLineageLaguna \
-    LineageSdkOverlayLaguna \
     SettingsOverlayLaguna \
     SimpleDeviceConfigOverlayLaguna
 
